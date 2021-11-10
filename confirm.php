@@ -2,7 +2,7 @@
   session_start();
 
   $name = $_POST['name'];
-  $hobby = $_POST['email'];
+  $email = $_POST['email'];
   $gender = $_POST['gender'];
   $_SESSION['name'] = $_POST['name'];
   $_SESSION['email'] = $_POST['email'];
@@ -28,7 +28,7 @@
 </div>
 <hr>
 <p>あなたの名前は <?php echo $name;?> さんです。</p>
-<p>メールアドレスは <?php echo $hobby;?> です。</p>
+<p>メールアドレスは <?php echo $email;?> です。</p>
 
 <p>性別は <?php if( $gender === "1" ){ echo '男性'; }
 		elseif( $gender === "2" ){ echo '女性'; }
